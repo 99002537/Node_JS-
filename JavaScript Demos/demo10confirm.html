@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm(){
+            if(document.getElementById("username").value==""){
+                alert("Enter your name");
+                document.myform.uname.focus();
+            }else if(document.getElementById("password").value==""){
+                alert("Enter your password");
+                document.myform.pass.focus();
+            }
+            else if(document.getElementById("age").value==""){
+                alert("Enter age");
+                document.myform.age.focus();
+            }
+            else if(document.getElementById("gen1").checked==""&&document.getElementById("gen2").checked==""){
+                alert("Enter gender");
+                document.myform.gender[0].focus();
+            }
+            else{
+                alert("You are registered");
+                document.myform.submit();
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="demo9confirm.html" name="myform"><br>
+        Name<input type="text" name="uname" id="username"><br>
+        Password<input type="password" name="pass" id="password"><br>
+        Age<input type="text" name="age" id="age"><br>
+        Female<input type="radio" name="gender" id="gen1">
+        Male<input type="radio" name="gender" id="gen2"><br>
+        Register<input type="button" name="Register" onclick="validateForm()"><br>
+    </form>
+    
+</body>
+</html>

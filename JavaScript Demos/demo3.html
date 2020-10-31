@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num1=prompt('Enter number1',num1);
+        var num2=prompt('Enter number2',num2);
+        var result=parseInt(num1)+parseInt(num2);
+            if(result==NaN) {
+                alert('Please enter a number');
+             }
+            else{
+                document.write('The result is=',result);
+            }
+    </script>
+</head>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <script>
+ // var username = prompt('Enter Name','Ram');
+ // alert('Welcome '+username + ' Please enter the numbers you want to add');
+ var A = prompt('Enter A',A);
+ if(isNaN(parseInt(A)))
+ {var A = prompt('Enter a valid number ',A);}
+ var B = prompt('Enter B ',B); 
+ if(isNaN(parseInt(B)))
+ {var B = prompt('Enter a valid number ',B);}
+ var sum= parseInt(A)+parseInt(B);
+ alert('Total sum is'+sum); 
+ var result=typeof(sum);
+ document.write(result);
+ </script>
+</head>
+<body>
+ 
+</body>
+</html>

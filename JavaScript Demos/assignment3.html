@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function register(username){
+        userArray=['Tom','John','Leela','Raju'];
+        userArray.array.forEach(function(element) {
+            if(element==username){
+                alert('username already exists');
+                return false;
+            }
+            else{
+               userArray.push(username);
+              // document.write('welcome '+username);
+            }
+        });
+        return true;
+    }
+    register();
+    </script>
+   
+</head>
+<body>
+    <form action="Assignment1.html" name="myform">
+    Name<input type="text" id="username">
+    <input type="button" value="Register" onclick="register()">
+    <div id="myid"></div>
+    </form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function register(username){
+            userArray=['Tom','John','Leena','Raju'];
+            userArray.array.forEach(element => {
+                if(element==username){
+                    alert('Username already exists!')
+                    return false;
+                } 
+                else{
+                    userArray.push(username);
+                }
+            });
+            return true;
+        }
+        register();
+    </script>
+</head>
+<body>
+    <form action="demo6.html" name="myform">
+        Name<input type="text" id="username">
+        <input type="button" value="Register" onclick="register()">
+        <div id="myid"></div>
+    </form>
+</body>
+</html>
