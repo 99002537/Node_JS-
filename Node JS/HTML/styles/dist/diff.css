@@ -1,0 +1,9 @@
+h1 {
+  color: blue;
+  background-color: red;
+}
+
+.myheader, h1 {
+  background-color: cadetblue;
+  color: coral;
+}

@@ -1,0 +1,14 @@
+@mixin header($color,$bgcolor) {
+    color: $color;
+    background-color: $bgcolor;
+}
+h1{
+    @include header(blue,red )
+}
+.myheader{
+    background-color: cadetblue;
+    color: coral;
+}
+h1{
+    @extend.myheader;
+}
