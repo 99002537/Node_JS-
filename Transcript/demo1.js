@@ -1,0 +1,11 @@
+// var message:string="Hello world";
+// console.log(message);
+// var greet='hi';
+// console.log(greet);
+var username = 'Kumaran';
+var username;
+var username = 'kumaran';
+var urname1;
+urname1 = 'Priya';
+urname1 = 10;
+console.log(urname1);
